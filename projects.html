@@ -1,0 +1,107 @@
+<style>
+	*{
+		color: white;
+		text-align: center;
+	}
+	body{
+		background-color: #0f172a;
+	}
+
+
+	h1{
+		color: white;
+		text-align: center;
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	.cards{
+		width: 80%;
+		height: 500px;
+		display: flex;
+		margin: auto;
+		padding: 10px;
+
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card{
+		height: 90%;
+		width: 100%;
+		margin-left: 4px;
+		margin-right: 4px;
+
+		background-color: #475569;
+	}
+
+	.leiras{
+		border: 2px solid rgb(255, 255, 255);
+		width: 80%;
+		margin: auto;
+		height: 20%;
+		padding: 1px;
+		border-radius: 5px;
+	}
+
+	button{
+		color: black;
+		border-radius: 10px;
+		width: 80%;
+		margin: auto;
+		padding: 4px;
+		transition: 0.2s;
+		border: 2px solid black;
+		font-style: italic;
+	}
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+	button:hover{
+		background-color: black;
+
+		a{
+			font-size: 17px;
+			color: white;
+			font-style: italic;
+		}
+	}
+
+	@media screen and (max-width: 1400px) {
+		h1{
+			font-size: 25px;
+		}
+
+		.leiras{
+			font-size: 12px;
+			position: relative;
+		}
+	}
+</style>
+
+<h1>Projektek</h1>
+<div class="cards">
+	<div class="card">
+		<h1>BMI</h1>
+		<p class="leiras">Ez az oldal kiszámolja a BMI-indexed</p>
+		<button><a href="">Tovább az oldalra</a></button>
+	</div>
+
+	
+	<div class="card">
+		<h1>Itt a piros..</h1>
+		<p class="leiras">Keresd meg a pirosat! Sok sikert!</p>
+		<button><a href="">Tovább az oldalra</a></button>
+	</div>
+
+
+
+	<div class="card">
+		<h1>Jelszó generátor</h1>
+		<p class="leiras">Generálj egyedi jelszó akár 200 karakter hosszúságig</p>
+		<button><a href="">Tovább az oldalra</a></button>
+	</div>
+</div>
