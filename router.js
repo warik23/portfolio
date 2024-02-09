@@ -1,5 +1,6 @@
 import { about } from "./about.js";
-import { home } from "./home.js"
+import { home } from "./home.js";
+import {projects} from "./projects.js";
 
 const routes={
     "" : "home.html",
@@ -27,5 +28,6 @@ async function loadPage(url,domObj){
     const html=await response.text()
     domObj.innerHTML=html
     if(url=='about.html') about()
-    else if(url=='home.html') home()
+    if(url=='home.html') home()
+    if(url=="projects.html") projects()
 }

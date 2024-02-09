@@ -1,0 +1,13 @@
+[
+	{
+			"id": "1",
+			"title": "Drums",
+			"descr": "Az érintett témakörök, technológiák felsorakoztatása",
+			"mainImg": "az img url",
+			"technologies": "[CSS3, HTML5...]",
+			"images": "egy pár kiemelt kódsor képe...amire büszke vagy",
+			"gitHub": "link",
+			"hosted": "publikált oldal linkje",
+			"createdAt": "2023.11.10"
+	}
+]
