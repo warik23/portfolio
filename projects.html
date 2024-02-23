@@ -31,7 +31,7 @@
 		width: 100%;
 		margin-left: 4px;
 		margin-right: 4px;
-
+		transition: 0.3s;
 		background-color: #23354b;
 	}
 
@@ -44,27 +44,33 @@
 		border-radius: 5px;
 	}
 
-	button{
-		color: black;
-		border-radius: 10px;
+	.gomb3{
+		color: rgba(0, 0, 0, 0.337);
+		border-radius: 5px;
 		width: 80%;
 		margin: auto;
 		padding: 4px;
 		transition: 0.2s;
-		border: 2px solid black;
+		background-color: #1c232c;
+		border: 2px solid rgb(0, 0, 0);
 		font-style: italic;
+		transition: 0.3s;
 	}
 
 	a{
 		text-decoration: none;
-		color: black;
+		color: #4f5154;
+		transition: 0.3s;
 	}
 
-	button:hover{
-		background-color: black;
+	.gomb3:hover{
+		
+			background-color: rgba(0, 0, 0, 0.305);
+		
+		
 
 		a{
-			font-size: 17px;
+			font-size: 15px;
 			color: white;
 			font-style: italic;
 		}
@@ -76,8 +82,32 @@
 		}
 
 		.leiras{
-			font-size: 12px;
+			font-size: 14px;
 			position: relative;
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+		.cards{
+			display: block;
+		}
+		.card{
+			width: 260px;
+			margin: auto;
+			margin-bottom: 10px;
+			transition: 0.3s;
+		}
+	}
+
+	@media screen and (max-width: 360px) {
+		.cards{
+			display: block;
+		}
+		.card{
+			width: 180px;
+			margin: auto;
+			margin-bottom: 10px;
+			transition: 0.3s;
 		}
 	}
 </style>
@@ -87,14 +117,14 @@
 	<div class="card">
 		<h1>BMI</h1>
 		<p class="leiras">Ez az oldal kiszámolja a BMI-indexed</p>
-		<button><a href="">Tovább az oldalra</a></button>
+		<button class="gomb3"><a href="" target="_blank">Tovább az oldalra</a></button>
 	</div>
 
 	
 	<div class="card">
 		<h1>Itt a piros..</h1>
 		<p class="leiras">Keresd meg a pirosat! Sok sikert!</p>
-		<button><a href="">Tovább az oldalra</a></button>
+		<button class="gomb3"><a href="" target="_blank">Tovább az oldalra</a></button>
 	</div>
 
 
@@ -102,6 +132,6 @@
 	<div class="card">
 		<h1>Jelszó generátor</h1>
 		<p class="leiras">Generálj egyedi jelszó akár 200 karakter hosszúságig</p>
-		<button><a href="">Tovább az oldalra</a></button>
+		<button class="gomb3"><a href="" target="_blank">Tovább az oldalra</a></button>
 	</div>
 </div>
