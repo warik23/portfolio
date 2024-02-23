@@ -3,13 +3,16 @@
 	*{
 		color: white;
 		text-align: center;
+		
 	}
 	body{
 		background-color: #0f172a;
+		
 	}
 
 	.main{
 		height: 90%;
+		animation: 1s ease-out 0s 1 slideInLeft;
 	}
 
 	h1{
@@ -58,26 +61,108 @@
 	}
 
 	.card2{
-		width: 40%;
+		width: 500px;
 		margin: auto;
 		border: 2px solid #2b4070;
 		background-color: #232f4b;
 		border-radius: 5px;
 		font-size: 20px;
+		margin-bottom: 10px;
 	}
+
+	
+
+		.gomb3{
+		color: rgba(0, 0, 0, 0.337);
+		border-radius: 5px;
+		width: 45%;
+		margin: auto;
+		padding: 3px;
+		transition: 0.2s;
+		background-color: #1c232c;
+		border: 2px solid rgb(0, 0, 0);
+		font-style: italic;
+		transition: 0.3s;
+		margin-bottom: 10px;
+	}
+
+	a{
+		text-decoration: none;
+		color: #4f5154;
+		transition: 0.3s;
+	}
+
+	.gomb3:hover{
+		
+			background-color: rgba(0, 0, 0, 0.305);
+
+		a{
+			font-size: 18px;
+			color: white;
+			font-style: italic;
+		}
+	}
+
+	@media screen and (max-width: 570px) {
+      .card2{
+				width: 80%;
+			}
+
+			.gomb3{
+				width: 80%;
+				font-size: 16px;
+			}
+		}
+
+		@keyframes slideInLeft {
+        0% {
+          transform: translateY(100%);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+
+				0% { opacity: 0; }
+  		100% { opacity: 1; }
+      }
+		
+			.aboutkep{
+				width: 200px;
+				height: 200px;
+				margin: auto;
+				border: 2px solid #232f4b;
+				border-radius: 100%;
+				margin-bottom: 10px;
+				justify-content: center;
+				align-items: center;
+				display: flex;
+			}
+	
 	
 </style>
 
 <div class="main">
 	<h1>Molnár Nándor</h1>
-	
 	<p>Programozó</p>
+	<div class="aboutkep">
+		<img src="" alt="Hamarosan Itt lesz egy kép">
+	</div>
+	
+
 	<div class="card2">
 		<h1>About me</h1>
 		<p>I like programing</p>
 		<p>I like dogs</p>
 		<p>I like</p>
-		<p>I</p>
+	</div>
+
+	<div class="card2">
+		<h1>Projects</h1>
+		<p>Password Generator</p>
+		<p>BMI Calculator</p>
+		<p>Itt a piros hol a piros</p>
+		<button class="gomb3"><a href="#/projects">Go to Projects</a></button>
 	</div>
 
 	<div class="island">

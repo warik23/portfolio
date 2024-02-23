@@ -13,6 +13,7 @@
 		text-align: center;
 		font-style: italic;
 		font-weight: bold;
+		animation: 1s ease-out 0s 1 slideInLeft;
 	}
 
 	.cards{
@@ -21,7 +22,7 @@
 		display: flex;
 		margin: auto;
 		padding: 10px;
-
+		animation: 1s ease-out 0s 1 slideInLeft;
 		justify-content: center;
 		align-items: center;
 	}
@@ -102,14 +103,30 @@
 	@media screen and (max-width: 360px) {
 		.cards{
 			display: block;
+			
 		}
 		.card{
-			width: 180px;
+			
+			width: 100%;
+			height: 350px;
 			margin: auto;
 			margin-bottom: 10px;
 			transition: 0.3s;
 		}
 	}
+
+	@keyframes slideInLeft {
+        0% {
+          transform: translateY(100%);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+
+				0% { opacity: 0; }
+  100% { opacity: 1; }
+      }
 </style>
 
 <h1>Projektek</h1>
@@ -117,14 +134,14 @@
 	<div class="card">
 		<h1>BMI</h1>
 		<p class="leiras">Ez az oldal kiszámolja a BMI-indexed</p>
-		<button class="gomb3"><a href="" target="_blank">Tovább az oldalra</a></button>
+		<button class="gomb3"><a href="https://warik23.github.io/bmi2/" target="_blank">Tovább az oldalra</a></button>
 	</div>
 
 	
 	<div class="card">
 		<h1>Itt a piros..</h1>
 		<p class="leiras">Keresd meg a pirosat! Sok sikert!</p>
-		<button class="gomb3"><a href="" target="_blank">Tovább az oldalra</a></button>
+		<button class="gomb3"><a href="https://warik23.github.io/ittapirosholapiros/" target="_blank">Tovább az oldalra</a></button>
 	</div>
 
 
@@ -132,6 +149,6 @@
 	<div class="card">
 		<h1>Jelszó generátor</h1>
 		<p class="leiras">Generálj egyedi jelszó akár 200 karakter hosszúságig</p>
-		<button class="gomb3"><a href="" target="_blank">Tovább az oldalra</a></button>
+		<button class="gomb3"><a href="https://jelszogen.netlify.app/" target="_blank">Tovább az oldalra</a></button>
 	</div>
 </div>

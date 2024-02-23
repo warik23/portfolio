@@ -24,7 +24,7 @@
     .panels {
       font-size: 50px;
       display: flex;
-      height: 97vh;
+      height: 40vh;
 
 
     }
@@ -32,7 +32,7 @@
     .panel {
 
       box-shadow: 0px 0px 20px 6px black;
-      height: 50%;
+      height: 100%;
       border-radius: 3px;
       font-size: 30px;
       width: 100vh;
@@ -68,7 +68,7 @@
 
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
       border: 3px solid #5d7ba4;
       color: white;
     }
@@ -84,17 +84,30 @@
 
     @media screen and (max-width: 428px) {
       .panels {
-        display: block;
+        display: grid;
         margin-top: 10px;
         margin-bottom: 10px;
         flex: 1;
+        height: 700px;
       }
 
       .panel {
+
         width: 80%;
         margin: auto;
       }
+
     }
+
+    @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+    .container{
+        animation: fadeIn 2s;
+        
+      }
   </style>
 
 

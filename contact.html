@@ -12,8 +12,10 @@
 	.card{
 		width: 300px;
 		margin: auto;
-		background-color: #424b59;
+		background-color:  #232f4b;
+		border: 2px solid #2b4070;
 		margin-bottom: 5px;
+		animation: 1s ease-out 0s 1 slideInLeft;
 	}
 
 	@media screen and (max-width: 991px) {
@@ -37,15 +39,39 @@
 			transition: 0.3s;
 		}
 	}
+
+	@keyframes slideInLeft {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+			@keyframes slideInLeft2 {
+        0% {
+          transform: translateX(-100%);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+
+				0% { opacity: 0; }
+ 			 100% { opacity: 1; }
+      }
+
 </style>
 
 <h1>Contact</h1>
 <div class="card">
-	<p>email: </p>
-	<p>Telefonszám: </p>
-	<p>Business email: </p>
+	<p>email: business@gmail.com</p>
+	<p>Telefonszám: 112</p>
+	<p>Business email: Nem</p>
 </div>
-<div class="card">
-	<p>Discord: - </p>
-	<p>Instagram: </p>
+<div class="card" style="animation: 1s ease-out 0s 1 slideInLeft2;">
+	<p>Discord: rendszergazda </p>
+	<p>Instagram: nndelse_ </p>
 </div>
