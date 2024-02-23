@@ -1,8 +1,10 @@
 <style>
-	.home{
+	.home {
 		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	}
-	h1,p{
+
+	h1,
+	p {
 		font-size: 25px;
 		text-align: center;
 		color: white;
@@ -11,39 +13,117 @@
 		animation: 1s ease-out 0s 1 slideInLeft;
 	}
 
-	
+
 
 	@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+		0% {
+			transform: translateX(-100%);
+		}
 
-	0% { opacity: 0; }
-  100% { opacity: 1; }
-}
+		100% {
+			transform: translateX(0);
+		}
+
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	.blocks {
+		width: 65%;
+		height: 300px;
+		border: 2px solid #2b4070;
+		border-radius: 10px;
+		margin: auto;
+		display: flex;
+		gap: 1rem;
+		padding: 10px;
+	}
+
+	.kocka {
+		border: 2px solid #192748;
+		background-color: #192748;
+		border-radius: 5px;
+
+		width: 100%;
+	}
+
+	.leiras2 {
+		font-size: 19px;
+		width: 80%;
+		margin: auto;
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@media screen and (max-width: 1200px) {
+		.leiras2 {
+			font-size: 16px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.leiras2 {
+			font-size: 14px;
+		}
+
+		.blocks {
+			display: grid;
+			height: 100%;
+		}
+
+		.kocka {
+			height: 200px;
+		}
+	}
+
+	@media screen and (max-width: 468px) {
+		.leiras2 {
+			font-size: 13px;
+
+		}
+
+		.kocka {
+			width: 100%;
+			overflow-y: scroll;
+		}
+
+		.kockacimek {
+			font-size: 100%;
+		}
+	}
 
 
-
-.panels{
-	animation: 1s ease-out 0s 1 slideInLeft;
-}
+	.panels,
+	.blocks {
+		animation: 1s ease-out 0s 1 slideInLeft;
+	}
 </style>
-		<div class="panels">
-	
+<div class="panels">
+
+</div>
+
+<div class="home">
+	<h1 style="font-size: 34px;">Üdvözöllek a weboldalon!</h1>
+
+	<div class="blocks">
+		<div class="kocka">
+			<h1 class="kockacimek">Információk</h1>
+			<p class="leiras2">Eme weboldalon láthatóak projektjeim, információk rólam, és a tudásomról.</p>
+			<p class="leiras2">Az About oldal segít megismerni engem, hasznos információkat tartalmaz rólam.</p>
 		</div>
 
-		<div class="home">
-			<h1>Üdvözöllek a weboldalon!</h1>
-			<p>Ezen a weboldalon itt most nagyon sok információ lesz itt!</p>
+		<div class="kocka">
+			<h1 class="kockacimek">Oldalak</h1>
+			<p class="leiras2">A Projects oldal bemutatja a már meglévő projektjeimet</p>
+			<p class="leiras2">A Contact fül elérhetőségeimet szemlélteti.</p>
+			<p class="leiras2">A weboldal elkészítése összen 11.3 órába telt.</p>
 		</div>
-	
-	
-	
-	
-	
-		
-	
-	
+	</div>
+
+
+</div>
